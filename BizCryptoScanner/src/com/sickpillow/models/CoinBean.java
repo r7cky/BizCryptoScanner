@@ -85,7 +85,7 @@ public class CoinBean implements java.lang.Comparable<CoinBean> {
 				occorunces++;
 			} else if (rawString.toLowerCase().contains(coinNameAbrvWord.toLowerCase())) {
 				//time etc, and game are often high up because they are regularly used words, this fixes it by avoiding it
-				if (!coinNameAbrv.toLowerCase().equals("time") && !coinNameAbrv.toLowerCase().equals("etc") && !coinNameAbrv.toLowerCase().equals("game")) {
+				if (!coinNameAbrv.toLowerCase().equals("time") && !coinNameAbrv.toLowerCase().equals("etc") && !coinNameAbrv.toLowerCase().equals("game") && !coinNameAbrv.toLowerCase().equals("moon")) {
 					occorunces++;
 				}
 			}
@@ -104,7 +104,7 @@ public class CoinBean implements java.lang.Comparable<CoinBean> {
 				occorunces++;
 				this.setLatestReply(replyBean);
 			} else if (replyContent.toLowerCase().contains(coinNameAbrvWord.toLowerCase())) {
-				if (!coinNameAbrv.toLowerCase().equals("time") && !coinNameAbrv.toLowerCase().equals("etc") && !coinNameAbrv.toLowerCase().equals("game")) {
+				if (!coinNameAbrv.toLowerCase().equals("time") && !coinNameAbrv.toLowerCase().equals("etc") && !coinNameAbrv.toLowerCase().equals("game") && !coinNameAbrv.toLowerCase().equals("moon")) {
 					occorunces++;
 					this.setLatestReply(replyBean);
 				}
