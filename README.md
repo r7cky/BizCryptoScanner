@@ -8,6 +8,6 @@ Some things for the future:
 - Graph previous results to see changes over time
 - Get sentimacy value from posts
 
-If this project helped you out, donate BTC here: 16dQLcu2qHXHX8Th9SEJg8io8oCwSXR8zB
+### If this project helped you out, donate BTC here: 16dQLcu2qHXHX8Th9SEJg8io8oCwSXR8zB
 
 GLHF!

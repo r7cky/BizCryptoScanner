@@ -39,12 +39,13 @@ public class FourChanScanner {
 		JsonParser jp = new JsonParser(); //from gson
 		JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent())); //Convert the input stream to a json element
 		JsonArray rootobj = root.getAsJsonArray(); //May be an array, may be an object.
-
+		
 		for (int pageCount = 0; pageCount < rootobj.size(); pageCount++) {
 			JsonElement pageElement = rootobj.get(pageCount);
 			JsonObject pageObject = pageElement.getAsJsonObject();
 			JsonArray threadsArray = pageObject.get("threads").getAsJsonArray();
-
+			
+			//iterates through all threads on the board
 			for (int threadCount = 0; threadCount < threadsArray.size(); threadCount++) {
 				JsonElement threadElement = threadsArray.get(threadCount);
 				JsonObject threadObject = threadElement.getAsJsonObject();
