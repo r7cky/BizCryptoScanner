@@ -1,6 +1,6 @@
 # BizCryptoScanner
 
-### If this project helped you out, donate BTC here: 16dQLcu2qHXHX8Th9SEJg8io8oCwSXR8zB
+### This project is outdated
 
 ---
 
